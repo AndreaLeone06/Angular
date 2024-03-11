@@ -1,10 +1,10 @@
 export class Email {
     destinatario: string;
-    object: string;
-    body: string;
-    constructor(destinatario: string, object: string, body: string) {
+    oggetto: string;
+    corpo: string;
+    constructor(destinatario: string, oggetto: string, corpo: string) {
         this.destinatario = destinatario;
-        this.object = object;
-        this.body = body;
+        this.oggetto = oggetto;
+        this.corpo = corpo;
     }
 }

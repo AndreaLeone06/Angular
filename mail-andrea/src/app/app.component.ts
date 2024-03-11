@@ -8,8 +8,8 @@ import { Email } from './mail.model';
 export class AppComponent {
   title = 'mail-andrea';
   vettore: Email[] = [];
-  newEmail(destinatario: HTMLInputElement, object: HTMLInputElement, body: HTMLInputElement): boolean {
-    this.vettore.push(new Email(destinatario.value, object.value, body.value))
+  newEmail(destinatario: HTMLInputElement, oggetto: HTMLInputElement, corpo: HTMLInputElement): boolean {
+    this.vettore.push(new Email(destinatario.value, oggetto.value, corpo.value))
     console.log(this.vettore)
     return false
   }

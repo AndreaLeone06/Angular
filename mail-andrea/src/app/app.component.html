@@ -1,12 +1,14 @@
 <form>
   <input name= "destinatario" type="text" #destinatario>
-  <label for="destinatario">To</label><br>
+  <label for="destinatario">a</label><br>
 
   <input name= "oggetto" type="text" #oggetto>
-  <label for="oggetto">Object</label><br>
+  <label for="oggetto">oggetto><br>
 
   <input name= "corpo" type="text" #corpo>
-  <label for="corpo">Body</label><br>
+  <label for="corpo">corpo</label><br>
 
-  <button (click) = "newEmail(destinatario, oggetto, corpo)">Send</button>
+  <button (click) = "newEmail(destinatario, oggetto, corpo)">Invia</button>
 </form>
+<div ngFor = "let mail of vettore"></div>
+<app-sent-mail [mailozza] = "mail"></app-sent-mail>
